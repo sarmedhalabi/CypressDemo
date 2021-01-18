@@ -9,8 +9,6 @@ describe(' my first test case', function(){
         cy.get('#nav-search-submit-button').click()
 
 
-// changing something from github
-       // changes
 
     }
 
