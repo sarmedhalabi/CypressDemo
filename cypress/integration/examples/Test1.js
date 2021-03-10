@@ -11,7 +11,7 @@ describe(' my first test case', function () {
             if (textveg.includes('Cauli')) {
 
                 $el.find('button').click()
-                // added new commit on this testing/branch
+                
 
             }
 
