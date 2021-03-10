@@ -1,28 +1,25 @@
-describe(' my first test case', function(){
+describe(' my first test case', function () {
 
-    it.skip('my first test case',function(){
+    it.skip('my first test case', function () {
 
 
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
         cy.get('input[type=search]').type('ca')
-        cy .get('.products').find('.product').each(($el,index,$list)=>{
-const textveg= $el.find('h4.product-name').text()
+        cy.get('.products').find('.product').each(($el, index, $list) => {
+            const textveg = $el.find('h4.product-name').text()
 
-if( textveg.includes('Cauli')){
+            if (textveg.includes('Cauli')) {
 
-    $el.find('button').click()
-    
-}
+                $el.find('button').click()
+                // added new commit on this testing/branch
+
+            }
 
 
 
         })
-        
 
-
-
-
-    }
+ }
 
 
 
@@ -36,5 +33,5 @@ if( textveg.includes('Cauli')){
 
 
 
-    
+
 })
